@@ -1,0 +1,1144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumina | Premium Modern E-Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+      <div class="container header-container">
+        <!-- Logo -->
+        <a href="#hero" class="brand-logo" aria-label="Lumina Store Homepage">
+          <span class="brand-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+              ></polygon>
+            </svg>
+          </span>
+          <span>LUMINA</span>
+          <span class="brand-tag">STORE</span>
+        </a>
+
+        <!-- Desktop Search Bar -->
+        <div class="header-search">
+          <div class="search-input-wrapper">
+            <svg
+              class="search-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input
+              type="text"
+              id="desktopSearchInput"
+              placeholder="Search for products, brands and more..."
+              autocomplete="off"
+            />
+            <button
+              type="button"
+              class="search-clear-btn"
+              id="desktopSearchClear"
+              aria-label="Clear search"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <!-- Notification Icon -->
+          <button
+            type="button"
+            class="icon-btn"
+            id="headerNotificationBtn"
+            aria-label="Notifications"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+            <span class="notification-indicator" aria-hidden="true"></span>
+          </button>
+
+          <!-- Wishlist Icon -->
+          <button
+            type="button"
+            class="icon-btn"
+            id="headerWishlistBtn"
+            aria-label="View Wishlist"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
+            <span class="badge-count" id="wishlistBadge">0</span>
+          </button>
+
+          <!-- Cart Icon -->
+          <button
+            type="button"
+            class="icon-btn"
+            id="headerCartBtn"
+            aria-label="View Shopping Cart"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              ></path>
+            </svg>
+            <span class="badge-count" id="cartBadge">0</span>
+          </button>
+
+          <!-- User Profile Pill -->
+          <div class="user-profile-btn" role="button" tabindex="0">
+            <img
+              src="/assert/brazy img.png"
+              alt="Brazy avatar"
+              class="user-avatar"
+            />
+            <div class="user-info">
+              <span class="user-greeting">Welcome,</span>
+              <span class="user-name">Brazy</span>
+            </div>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+
+          <!-- Mobile Menu Toggle -->
+          <button
+            type="button"
+            class="icon-btn mobile-menu-btn"
+            id="mobileMenuBtn"
+            aria-label="Open Navigation Menu"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Search Row -->
+      <div class="mobile-search-row">
+        <div class="search-input-wrapper">
+          <svg
+            class="search-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input
+            type="text"
+            id="mobileSearchInput"
+            placeholder="Search products, brands and more..."
+            autocomplete="off"
+          />
+          <button
+            type="button"
+            class="search-clear-btn"
+            id="mobileSearchClear"
+            aria-label="Clear search"
+          >
+            ✕
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Carousel -->
+      <section class="hero-section" id="hero">
+        <div class="container">
+          <div class="hero-carousel" id="heroCarousel">
+            <div class="carousel-track" id="carouselTrack">
+              <!-- Slide 1 -->
+              <div
+                class="carousel-slide carousel-slide--spring"
+              >
+                <div class="slide-content">
+                  <span class="slide-badge">Exclusive Spring Drop</span>
+                  <h1 class="slide-title">Upgrade Your Everyday Style</h1>
+                  <p class="slide-desc">
+                    Discover premium products carefully selected for modern
+                    living. Engineered for daily comfort, performance, and
+                    timeless aesthetics.
+                  </p>
+                  <div class="carousel-actions">
+                    <a
+                      href="#catalog"
+                      class="btn-primary"
+                      data-filter-category="Fashion"
+                      >Shop Collection →</a
+                    >
+                    <a href="#catalog" class="btn-secondary">Explore Catalog</a>
+                  </div>
+                </div>
+                <div class="slide-media">
+                  <div class="slide-image-wrapper">
+                    <img
+                      src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=800&q=80"
+                      alt="Premium Merino Wool Minimalist Hoodie"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div
+                class="carousel-slide carousel-slide--tech"
+              >
+                <div class="slide-content">
+                  <span class="slide-badge">High Performance</span>
+                  <h2 class="slide-title">Next-Gen Tech. Better Living.</h2>
+                  <p class="slide-desc">
+                    Immerse yourself in precision audio, ergonomic mechanical
+                    peripherals, and ultra-fast smart devices designed for
+                    effortless productivity.
+                  </p>
+                  <div class="carousel-actions">
+                    <a
+                      href="#catalog"
+                      class="btn-primary"
+                      data-filter-category="Electronics"
+                      >Explore Tech →</a
+                    >
+                    <a href="#catalog" class="btn-secondary">View Deals</a>
+                  </div>
+                </div>
+                <div class="slide-media">
+                  <div class="slide-image-wrapper">
+                    <img
+                      src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80"
+                      alt="Aura Sound Pro Wireless Studio Headphones"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div
+                class="carousel-slide carousel-slide--wellness"
+              >
+                <div class="slide-content">
+                  <span class="slide-badge">Crafted For Wellness</span>
+                  <h2 class="slide-title">Fresh Arrivals For Modern Spaces</h2>
+                  <p class="slide-desc">
+                    Elevate your personal sanctuary with botanical self-care
+                    formulas, Scandinavian lighting, and handcrafted ceramics
+                    that inspire calm.
+                  </p>
+                  <div class="carousel-actions">
+                    <a href="#newArrivals" class="btn-primary"
+                      >View New Arrivals →</a
+                    >
+                    <a
+                      href="#catalog"
+                      class="btn-secondary"
+                      data-filter-category="Home & Living"
+                      >Home Collection</a
+                    >
+                  </div>
+                </div>
+                <div class="slide-media">
+                  <div class="slide-image-wrapper">
+                    <img
+                      src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=800&q=80"
+                      alt="Nordic Minimalist Ceramic Desk Lamp"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button
+              type="button"
+              class="carousel-nav-btn carousel-prev"
+              id="carouselPrev"
+              aria-label="Previous Slide"
+            >
+              ‹
+            </button>
+            <button
+              type="button"
+              class="carousel-nav-btn carousel-next"
+              id="carouselNext"
+              aria-label="Next Slide"
+            >
+              ›
+            </button>
+
+            <!-- Carousel Dots -->
+            <div class="carousel-dots" id="carouselDots">
+              <span class="carousel-dot active" data-index="0"></span>
+              <span class="carousel-dot" data-index="1"></span>
+              <span class="carousel-dot" data-index="2"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section class="categories-section" id="categories">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Explore Popular Categories</h2>
+              <p class="section-subtitle">
+                Browse through our diverse product selections
+              </p>
+            </div>
+          </div>
+
+          <div class="categories-grid" id="categoriesGrid">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products Section -->
+      <section class="section" id="featured">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Featured Highlights</h2>
+              <p class="section-subtitle">
+                Top curated picks recommended by our design specialists
+              </p>
+            </div>
+            <a href="#catalog" class="view-all-link">Browse Full Shop →</a>
+          </div>
+
+          <div class="product-grid" id="featuredGrid">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Mid Promotional Banner -->
+      <section class="section">
+        <div class="container">
+          <div class="promo-banner">
+            <div class="promo-content">
+              <span class="promo-tag">Limited Time Promotion</span>
+              <h2 class="promo-title">Big Deals. Better Prices.</h2>
+              <p class="promo-desc">
+                Save up to 40% on selected smart tech, luxury apparel, and
+                organic wellness essentials. Stock is limited for this season's
+                flash sale.
+              </p>
+              <button type="button" class="btn-deal" id="promoDealsBtn">
+                Explore Deals
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- New Arrivals Section -->
+      <section class="section section-alt" id="newArrivals">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Fresh New Arrivals</h2>
+              <p class="section-subtitle">
+                The very latest additions dropped this week
+              </p>
+            </div>
+            <a href="#catalog" class="view-all-link">View All New Arrivals →</a>
+          </div>
+
+          <div class="product-grid" id="newArrivalsGrid">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Best Sellers Section -->
+      <section class="section" id="bestSellers">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Customer Best Sellers</h2>
+              <p class="section-subtitle">
+                Our most highly rated and reviewed essentials
+              </p>
+            </div>
+            <a href="#catalog" class="view-all-link">See Top Rated →</a>
+          </div>
+
+          <div class="product-grid" id="bestSellersGrid">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Complete Product Catalog with Sidebar Filters -->
+      <section class="section" id="catalog">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Complete Product Catalog</h2>
+              <p class="section-subtitle">
+                Filter, search, and discover over 40+ carefully crafted products
+              </p>
+            </div>
+          </div>
+
+          <div class="catalog-layout">
+            <!-- Left: Filter Sidebar -->
+            <aside class="catalog-sidebar" id="catalogSidebar">
+              <div class="sidebar-header">
+                <span class="sidebar-title">Filters</span>
+                <button
+                  type="button"
+                  class="btn-reset-filters"
+                  id="resetFiltersBtn"
+                >
+                  Reset All
+                </button>
+              </div>
+
+              <!-- Category Filter -->
+              <div class="filter-group">
+                <h3 class="filter-group-title">Category</h3>
+                <ul class="filter-list" id="categoryFilterList">
+                  <!-- Injected via JS -->
+                </ul>
+              </div>
+
+              <!-- Price Range Filter -->
+              <div class="filter-group">
+                <h3 class="filter-group-title">Price Range</h3>
+                <input
+                  type="range"
+                  class="price-slider-input"
+                  id="priceRangeSlider"
+                  min="10"
+                  max="1200"
+                  step="10"
+                  value="1200"
+                />
+                <div class="price-range-inputs">
+                  <div class="price-box">
+                    <span class="price-currency">$</span>
+                    <input
+                      type="number"
+                      id="minPriceInput"
+                      value="0"
+                      min="0"
+                      max="1200"
+                      placeholder="Min"
+                    />
+                  </div>
+                  <span class="price-range-separator">-</span>
+                  <div class="price-box">
+                    <span class="price-currency">$</span>
+                    <input
+                      type="number"
+                      id="maxPriceInput"
+                      value="1200"
+                      min="10"
+                      max="1200"
+                      placeholder="Max"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Rating Filter -->
+              <div class="filter-group">
+                <h3 class="filter-group-title">Customer Rating</h3>
+                <ul class="filter-list">
+                  <li>
+                    <label class="filter-label">
+                      <span class="filter-input-wrap">
+                        <input
+                          type="radio"
+                          name="ratingFilter"
+                          value="0"
+                          checked
+                        />
+                        <span>All Ratings</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="filter-label">
+                      <span class="filter-input-wrap">
+                        <input type="radio" name="ratingFilter" value="4.8" />
+                        <span>4.8 ★ &amp; above</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="filter-label">
+                      <span class="filter-input-wrap">
+                        <input type="radio" name="ratingFilter" value="4.6" />
+                        <span>4.6 ★ &amp; above</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="filter-label">
+                      <span class="filter-input-wrap">
+                        <input type="radio" name="ratingFilter" value="4.0" />
+                        <span>4.0 ★ &amp; above</span>
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Availability & Deals Filter -->
+              <div class="filter-group">
+                <h3 class="filter-group-title">Availability &amp; Offers</h3>
+                <ul class="filter-list">
+                  <li>
+                    <label class="filter-label">
+                      <span class="filter-input-wrap">
+                        <input type="checkbox" id="inStockCheckbox" />
+                        <span>In Stock Only</span>
+                      </span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="filter-label">
+                      <span class="filter-input-wrap">
+                        <input type="checkbox" id="onSaleCheckbox" />
+                        <span>On Sale / Discounted</span>
+                      </span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+
+            <!-- Right: Catalog Main Area -->
+            <div class="catalog-content">
+              <!-- Toolbar -->
+              <div class="catalog-toolbar">
+                <div class="results-count" id="resultsCount">
+                  Showing <strong>0</strong> products
+                </div>
+
+                <div class="toolbar-controls">
+                  <button
+                    type="button"
+                    class="mobile-filter-trigger"
+                    id="mobileFilterBtn"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polygon
+                        points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"
+                      ></polygon>
+                    </svg>
+                    <span>Filters</span>
+                  </button>
+
+                  <div class="sort-select-wrapper">
+                    <label for="catalogSort">Sort by:</label>
+                    <select id="catalogSort">
+                      <option value="featured">Featured</option>
+                      <option value="newest">Newest Arrivals</option>
+                      <option value="price-asc">Price: Low to High</option>
+                      <option value="price-desc">Price: High to Low</option>
+                      <option value="rating">Highest Rated</option>
+                      <option value="popular">Most Popular</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Active Filter Chips -->
+              <div class="active-filters-chips" id="activeFilterChips"></div>
+
+              <!-- Product Grid -->
+              <div class="product-grid" id="catalogProductGrid">
+                <!-- Rendered via JS -->
+              </div>
+
+              <!-- Empty State -->
+              <div
+                class="empty-state"
+                id="catalogEmptyState"
+                hidden
+              >
+                <div class="empty-state-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </div>
+                <h3 class="empty-state-title">No products found</h3>
+                <p class="empty-state-desc">
+                  We couldn't find any products matching your current filters or
+                  search terms. Try changing your search query or reset your
+                  filters.
+                </p>
+                <button
+                  type="button"
+                  class="btn-primary"
+                  id="emptyStateResetBtn"
+                >
+                  Reset All Filters
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="newsletter-section">
+        <div class="container">
+          <div class="newsletter-card">
+            <h2 class="newsletter-title">Stay in the Loop</h2>
+            <p class="newsletter-desc">
+              Get 10% off your next purchase plus exclusive product drops,
+              design stories, and seasonal sales delivered straight to your
+              inbox.
+            </p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input
+                type="email"
+                id="newsletterEmail"
+                placeholder="Enter your email address"
+                required
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#hero" class="brand-logo">
+              <span class="brand-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon>
+                </svg>
+              </span>
+              <span>LUMINA</span>
+            </a>
+            <p>
+              Thoughtfully crafted lifestyle essentials, audio electronics, and
+              minimalist home design for discerning modern living.
+            </p>
+            <div class="footer-socials">
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="GitHub">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Shop</h4>
+            <ul class="footer-links">
+              <li><a href="#catalog">All Products</a></li>
+              <li><a href="#newArrivals">New Arrivals</a></li>
+              <li><a href="#bestSellers">Best Sellers</a></li>
+              <li><a href="#featured">Featured Collection</a></li>
+              <li>
+                <a href="#catalog" data-filter-sale="true">Sale &amp; Offers</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Categories</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="#catalog" data-filter-category="Electronics"
+                  >Electronics</a
+                >
+              </li>
+              <li>
+                <a href="#catalog" data-filter-category="Fashion">Fashion</a>
+              </li>
+              <li>
+                <a href="#catalog" data-filter-category="Footwear">Footwear</a>
+              </li>
+              <li>
+                <a href="#catalog" data-filter-category="Home & Living"
+                  >Home &amp; Living</a
+                >
+              </li>
+              <li>
+                <a href="#catalog" data-filter-category="Beauty">Beauty</a>
+              </li>
+              <li>
+                <a href="#catalog" data-filter-category="Sports">Sports</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Customer Care</h4>
+            <ul class="footer-links">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Track Your Order</a></li>
+              <li><a href="#">Shipping &amp; Returns</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 LUMINA Store. Built by <a class="brazy" href="#">Brazy</a>. All rights reserved.
+          </div>
+          <div class="payment-badges">
+            <span class="payment-tag">Visa</span>
+            <span class="payment-tag">Mastercard</span>
+            <span class="payment-tag">Apple Pay</span>
+            <span class="payment-tag">PayPal</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Overlay Backdrop for drawers and modals -->
+    <div class="overlay-backdrop" id="overlayBackdrop"></div>
+
+    <!-- Shopping Cart Drawer -->
+    <aside
+      class="cart-drawer"
+      id="cartDrawer"
+      aria-label="Shopping Cart Drawer"
+    >
+      <div class="drawer-header">
+        <div class="drawer-title-wrap">
+          <h3 class="drawer-title">Your Cart</h3>
+          <span class="drawer-count-badge" id="cartDrawerCount">0 items</span>
+        </div>
+        <button
+          type="button"
+          class="drawer-close-btn"
+          id="closeCartBtn"
+          aria-label="Close cart drawer"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Free Shipping Progress -->
+      <div class="shipping-progress-banner">
+        <div class="shipping-progress-text" id="shippingProgressText">
+          <span>Add $50.00 for FREE Shipping</span>
+          <strong id="shippingRemaining">$50.00 away</strong>
+        </div>
+        <div class="shipping-progress-track">
+          <div
+            class="shipping-progress-fill"
+            id="shippingProgressFill"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Cart Body -->
+      <div class="drawer-body" id="cartDrawerBody">
+        <!-- Items or Empty State rendered via JS -->
+      </div>
+
+      <!-- Cart Footer -->
+      <div class="drawer-footer" id="cartDrawerFooter">
+        <div class="cart-calc-row">
+          <span>Subtotal</span>
+          <strong id="cartSubtotal">$0.00</strong>
+        </div>
+        <div class="cart-calc-row">
+          <span>Estimated Shipping</span>
+          <span id="cartShipping">$5.99</span>
+        </div>
+        <div class="cart-calc-row total-row">
+          <span>Order Total</span>
+          <span id="cartTotal">$0.00</span>
+        </div>
+
+        <div class="carbon-badge">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <span>Carbon-neutral verified delivery</span>
+        </div>
+
+        <button type="button" class="btn-checkout" id="checkoutBtn">
+          Proceed to Checkout
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Wishlist Drawer -->
+    <aside class="cart-drawer" id="wishlistDrawer" aria-label="Wishlist Drawer">
+      <div class="drawer-header">
+        <div class="drawer-title-wrap">
+          <h3 class="drawer-title">Your Wishlist</h3>
+          <span class="drawer-count-badge" id="wishlistDrawerCount"
+            >0 items</span
+          >
+        </div>
+        <button
+          type="button"
+          class="drawer-close-btn"
+          id="closeWishlistBtn"
+          aria-label="Close wishlist drawer"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="drawer-body" id="wishlistDrawerBody">
+        <!-- Items or Empty State rendered via JS -->
+      </div>
+    </aside>
+
+    <!-- Mobile Navigation Drawer -->
+    <aside
+      class="cart-drawer"
+      id="mobileNavDrawer"
+      aria-label="Mobile Navigation Drawer"
+    >
+      <div class="drawer-header">
+        <div class="drawer-title-wrap">
+          <h3 class="drawer-title">Menu</h3>
+        </div>
+        <button
+          type="button"
+          class="drawer-close-btn"
+          id="closeMobileNavBtn"
+          aria-label="Close menu"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="drawer-body">
+        <button
+          type="button"
+          class="user-profile-btn mobile-drawer-profile"
+          aria-label="Brazy account profile"
+        >
+          <img
+            src="/assert/brazy img.png"
+            alt=""
+            class="user-avatar"
+          />
+          <span class="user-info">
+            <span class="user-greeting">Welcome,</span>
+            <span class="user-name">Brazy</span>
+          </span>
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <ul class="mobile-nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li>
+            <a href="#featured">Featured Collection</a>
+          </li>
+          <li>
+            <a href="#catalog">All Products</a>
+          </li>
+          <li>
+            <a href="#newArrivals">New Arrivals</a>
+          </li>
+          <li>
+            <a href="#bestSellers">Best Sellers</a>
+          </li>
+          <li class="mobile-nav-section-title">Categories</li>
+          <li><a href="#catalog" data-filter-category="Electronics">Electronics</a></li>
+          <li><a href="#catalog" data-filter-category="Fashion">Fashion</a></li>
+          <li><a href="#catalog" data-filter-category="Footwear">Footwear</a></li>
+          <li><a href="#catalog" data-filter-category="Home & Living">Home &amp; Living</a></li>
+          <li><a href="#catalog" data-filter-category="Beauty">Beauty</a></li>
+          <li><a href="#catalog" data-filter-category="Sports">Sports</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Product Details Quick View Modal -->
+    <div
+      class="modal-wrapper"
+      id="productModal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="modal-content">
+        <button
+          type="button"
+          class="modal-close-btn"
+          id="closeProductModalBtn"
+          aria-label="Close modal"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="modal-grid" id="modalProductDetails">
+          <!-- Rendered via JS -->
+        </div>
+
+        <!-- Related Products -->
+        <div class="modal-related-section">
+          <h4 class="modal-related-title">You Might Also Like</h4>
+          <div class="modal-related-grid" id="modalRelatedGrid">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Simulated Order Confirmation Modal -->
+    <div
+      class="modal-wrapper"
+      id="checkoutSuccessModal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="modal-content checkout-modal">
+        <div class="success-icon-wrap">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+          >
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <h3 class="checkout-title">Order Confirmed!</h3>
+        <p class="checkout-message">
+          Thank you for shopping with Lumina. Your receipt and live tracking
+          details have been sent to your email.
+        </p>
+
+        <div class="checkout-summary">
+          <div class="checkout-summary-row">
+            <span class="checkout-summary-label">Order Number:</span>
+            <strong id="orderNumberCode">#LUM-84920</strong>
+          </div>
+          <div class="checkout-summary-row">
+            <span class="checkout-summary-label">Estimated Delivery:</span>
+            <strong>3-5 Business Days</strong>
+          </div>
+          <div class="checkout-summary-row">
+            <span class="checkout-summary-label">Total Charged:</span>
+            <strong class="checkout-total" id="orderSummaryTotal">$0.00</strong>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          id="orderConfirmedCloseBtn"
+          class="btn-primary checkout-close-btn"
+        >
+          Continue Shopping
+        </button>
+      </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+    <!-- Scripts -->
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
